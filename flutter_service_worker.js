@@ -3,7 +3,7 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "6dca06bd1bd8ad48883cdad3bbe686ce",
+  "assets/AssetManifest.json": "fbcf3f4c5c9121110e479646d200ca8f",
 "assets/assets/fonts/montserrat/montserrat.ttf": "ee6539921d713482b8ccd4d0d23961bb",
 "assets/assets/fonts/poppins/Poppins-Bold.ttf": "a3e0b5f427803a187c1b62c5919196aa",
 "assets/assets/fonts/poppins/Poppins-Italic.ttf": "5e956c44060a7b3c0e39819ae390ab15",
@@ -22,6 +22,7 @@ const RESOURCES = {
 "assets/assets/imgs/D.jpg": "d7ecb4834bc732c274044ab841794fa4",
 "assets/assets/imgs/plant.jpg": "25dc4771de58406a47129cc9464fe982",
 "assets/assets/imgs/sc.png": "d4bb0c0e8a7d7c6b4a8680c0a78b6819",
+"assets/assets/imgs/scislamy.png": "6491ff62398cb36a997f622e9875437f",
 "assets/assets/imgs/4.jpg": "5d98c4e1d860ff12c876f85c9b6ff41c",
 "assets/assets/imgs/5424482.jpg": "11a43b6c92858f82bcff3c24a784b158",
 "assets/assets/imgs/BG01.png": "292fe68441561eae14b077f8f112acf9",
