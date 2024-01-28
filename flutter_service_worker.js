@@ -3,7 +3,7 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "3a3d38e234cc45625104b0efdde3cfd7",
+  "assets/AssetManifest.json": "1b3f47e8610d4417a2e7507f1237ddb9",
 "assets/assets/fonts/montserrat/montserrat.ttf": "ee6539921d713482b8ccd4d0d23961bb",
 "assets/assets/fonts/poppins/Poppins-Bold.ttf": "a3e0b5f427803a187c1b62c5919196aa",
 "assets/assets/fonts/poppins/Poppins-Italic.ttf": "5e956c44060a7b3c0e39819ae390ab15",
@@ -22,6 +22,7 @@ const RESOURCES = {
 "assets/assets/imgs/D.jpg": "d7ecb4834bc732c274044ab841794fa4",
 "assets/assets/imgs/plant.jpg": "25dc4771de58406a47129cc9464fe982",
 "assets/assets/imgs/sc.png": "d4bb0c0e8a7d7c6b4a8680c0a78b6819",
+"assets/assets/imgs/Taxi.png": "a0444b15f0e6cfb1d08357960cea127e",
 "assets/assets/imgs/saving.png": "c363cebee2d55404a925860869ccc08d",
 "assets/assets/imgs/scislamy.png": "6491ff62398cb36a997f622e9875437f",
 "assets/assets/imgs/islamy.png": "9ec606286401dd1274ddd74d6db5b500",
