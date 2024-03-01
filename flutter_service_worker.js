@@ -16,6 +16,7 @@ const RESOURCES = {
 "assets/assets/icons/apple.svg": "81afc16bd2183fcbdad794cd391e7f0d",
 "assets/assets/icons/graphic.svg": "6f05c1c6706df22c79a37a7ca4df3214",
 "assets/assets/icons/website.svg": "421f827e65eb765b8ad10e386bf07849",
+"assets/assets/imgs/jw.png": "a0444b15f0e6cfb1d08357960cea127e",
 "assets/assets/imgs/1.jpg": "f822793d6bcbfcdcc5d4f06e17b3039e",
 "assets/assets/imgs/2.jpg": "f612d25f9102c6f53c4601aa729a5226",
 "assets/assets/imgs/3.jpg": "7e02edb1e2a0a7323c44d2d1b9753d23",
