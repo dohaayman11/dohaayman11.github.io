@@ -13,7 +13,7 @@ def calculate_hash(file_path):
     return hash_object.hexdigest()
 
 # Example usage:
-file_path = 'assets/assets/imgs/jw.png'
+file_path = 'assets/assets/imgs/profile_doha.jpeg'
 print("sddddddddddd")
 hash_value = calculate_hash(file_path)
 print(f'The hash value of {file_path} is: {hash_value}')

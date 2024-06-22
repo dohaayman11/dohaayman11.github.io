@@ -25,6 +25,7 @@ const RESOURCES = {
 "assets/assets/imgs/sc.png": "d4bb0c0e8a7d7c6b4a8680c0a78b6819",
 "assets/assets/imgs/Taxi.png": "a0444b15f0e6cfb1d08357960cea127e",
 "assets/assets/imgs/saving.png": "c363cebee2d55404a925860869ccc08d",
+"assets/assets/imgs/profile_doha.jpeg": "318bf451859533316968c98f5ef70e3a",
 "assets/assets/imgs/scislamy.png": "6491ff62398cb36a997f622e9875437f",
 "assets/assets/imgs/islamy.png": "9ec606286401dd1274ddd74d6db5b500",
 "assets/assets/imgs/4.jpg": "5d98c4e1d860ff12c876f85c9b6ff41c",
