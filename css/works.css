@@ -265,22 +265,114 @@ margin: 0 auto 2rem;
 }
 
 /* ── RESPONSIVE ── */
-@media (max-width: 1100px) {
-  .works-photo-grid { columns: 3; }
+/* ============================================
+   ADDITIONAL RESPONSIVE FIXES
+   ============================================ */
+
+@media (max-width: 1024px) {
+  .page-banner-works {
+    min-height: 50vh;
+    padding-top: 5rem;
+  }
+  .works-intro .section-label,
+  .works-gallery-title .section-label {
+    font-size: 1rem;
+    letter-spacing: 0.15em;
+  }
 }
 
 @media (max-width: 768px) {
+  .page-banner-works {
+    min-height: 40vh;
+    padding-top: 4.5rem;
+  }
+
+  .works-section {
+    padding: var(--space-xl) 0;
+  }
+
+  .works-intro {
+    margin: 0 auto 2.5rem;
+  }
+  .works-intro .section-label {
+    font-size: .85rem;
+    letter-spacing: .12em;
+    gap: .5rem;
+  }
+  .works-intro p {
+    font-size: .92rem;
+  }
+
+  .works-list {
+    margin: 0 auto var(--space-xl);
+  }
+
   .works-list__item {
-    grid-template-columns: 44px 1fr;
+    grid-template-columns: 40px 1fr;
+    gap: var(--space-sm);
+    padding: var(--space-sm);
+  }
+  .works-list__item:hover {
+    padding-left: var(--space-sm);
+  }
+  .works-list__num {
+    font-size: 1.25rem;
+  }
+  .works-list__body h3 {
+    font-size: 1.02rem;
+  }
+  .works-list__body h3 em {
+    display: block;
+    margin-left: 0;
+    margin-top: .15rem;
+  }
+  .works-list__body p {
+    font-size: .85rem;
   }
   .works-list__loc {
     grid-column: 2 / -1;
     justify-self: start;
     margin-top: .5rem;
+    font-size: .62rem;
+    padding: .3rem .65rem;
   }
-  .works-photo-grid { columns: 2; }
+
+  .works-gallery-title {
+    margin: 0 auto 1.5rem;
+  }
+  .works-gallery-title .section-label {
+    font-size: .85rem;
+    letter-spacing: .12em;
+    gap: .5rem;
+  }
+  .works-gallery-title h2 {
+    font-size: 1.5rem;
+  }
+  .works-gallery-title p {
+    font-size: .88rem;
+  }
 }
 
 @media (max-width: 480px) {
-  .works-photo-grid { columns: 1; }
+  .page-banner-works {
+    min-height: 34vh;
+    padding-top: 4rem;
+  }
+  .page-banner__crumb {
+    font-size: .62rem;
+  }
+
+  .works-list__item {
+    grid-template-columns: 1fr;
+  }
+  .works-list__num {
+    grid-row: 1;
+  }
+  .works-list__loc {
+    grid-column: 1;
+  }
+
+  .works-photo-item {
+    margin-bottom: 6px;
+  }
 }
