@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ROOTBUILD — Integrated Contracting, Kingdom of Saudi Arabia</title>
+  <meta name="description" content="ROOTBUILD is a multidisciplinary contracting company delivering integrated construction and finishing solutions across the Kingdom of Saudi Arabia, aligned with Vision 2030." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/home.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Pliant:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="content-wrapper">
+
+  <!-- ============ NAVIGATION ============ -->
+ <nav class="nav" id="nav">
+  <div class="nav__inner">
+
+    <a href="index.html" class="nav__logo">
+      <img src="assets/logo.png" alt="ROOTBUILD" class="nav__logo-img" />
+      <span class="nav__logo-word">
+        ROOT<em>BUILD</em>
+      </span>
+    </a>
+    <ul class="nav__links">
+      <li class="active"><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+ <li class="nav__dropdown">
+    <button type="button" class="nav__dropdown-toggle">
+        Projects ▾
+    </button>
+    <ul class="dropdown-menu">
+        <li><a href="fitout-projects.html">Finishing Works</a></li>
+        <li><a href="fire-projects.html">Fire Protection Works</a></li>
+        <li><a href="industrial-projects.html">Industrial Works</a></li>
+        <li><a href="landscape-projects.html">Landscape Works</a></li>
+    </ul>
+</li> 
+  <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <button class="nav__hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </button>
+
+  </div>
+</nav>
+  <!-- ============ HERO SLIDER (Multiplex-style fullscreen) ============ -->
+  <section class="hero" id="home">
+
+    <!-- Slide 1 -->
+    <div class="hero__slide active">
+      <div class="hero__slide-bg" style="background-image:url('assets/hero_light_top.png')"></div>
+      <div class="hero__slide-overlay"></div>
+      <div class="hero__slide-content">
+        <span class="hero__eyebrow reveal-on-scroll">Kingdom of Saudi Arabia</span>
+        <h1 class="hero__title reveal-on-scroll">Great Structures<br /><em>Begin with Strong Roots</em></h1>
+        <p class="hero__subtitle reveal-on-scroll">Integrated construction and finishing solutions across the Kingdom — aligned with Vision 2030.</p>
+        <div class="hero__actions reveal-on-scroll">
+          <a href="about.html" class="hero__btn hero__btn--primary">Discover ROOTBUILD</a>
+          <a href="projects.html" class="hero__btn hero__btn--ghost">View Our Projects</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="hero__slide">
+      <div class="hero__slide-bg" style="background-image:url('assets/saudi_modern_skyscraper.png')"></div>
+      <div class="hero__slide-overlay"></div>
+      <div class="hero__slide-content">
+        <span class="hero__eyebrow">Fire-Fighting & Safety</span>
+        <h1 class="hero__title">Protecting Lives.<br /><em>Securing Futures.</em></h1>
+        <p class="hero__subtitle">Design, supply, installation and commissioning of fire-protection systems per NFPA and Saudi Civil Defence requirements.</p>
+        <div class="hero__actions">
+          <a href="services.html#fire-safety" class="hero__btn hero__btn--primary">Our Services</a>
+          <a href="projects.html" class="hero__btn hero__btn--ghost">12 Completed Projects</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="hero__slide">
+      <div class="hero__slide-bg" style="background-image:url('https://images.unsplash.com/photo-1599707254554-027aeb4deacd?auto=format&fit=crop&w=1920&q=80')"></div>
+      <div class="hero__slide-overlay"></div>
+      <div class="hero__slide-content">
+        <span class="hero__eyebrow">Vision 2030 Ready</span>
+        <h1 class="hero__title">Building the<br /><em>Kingdom's Future.</em></h1>
+        <p class="hero__subtitle">Eight specialties, one integrated delivery — from concept design to long-term maintenance across the Kingdom of Saudi Arabia.</p>
+        <div class="hero__actions">
+          <a href="services.html" class="hero__btn hero__btn--primary">Eight Specialties</a>
+          <a href="contact.html" class="hero__btn hero__btn--ghost">Get in Touch</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero controls -->
+    <div class="hero__controls">
+      <button class="hero__arrow" id="hero-prev" aria-label="Previous slide">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <div class="hero__dots">
+        <button class="hero__dot active" aria-label="Slide 1"></button>
+        <button class="hero__dot" aria-label="Slide 2"></button>
+        <button class="hero__dot" aria-label="Slide 3"></button>
+      </div>
+      <button class="hero__arrow" id="hero-next" aria-label="Next slide">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="hero__scroll-indicator">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT TEASER ============ -->
+  <section class="intro" id="intro">
+    <div class="container">
+      <div class="intro__grid">
+        <div class="intro__label reveal-on-scroll">01 — About Us</div>
+        <div class="intro__body">
+          <h2 class="intro__heading reveal-on-scroll">
+            Disciplined planning. Sound engineering.<br />Uncompromising commitment.
+          </h2>
+          <p class="intro__text reveal-on-scroll">
+            ROOTBUILD is a multidisciplinary contracting company delivering integrated
+            construction and finishing solutions across the Kingdom of Saudi Arabia.
+            We specialize in architectural and interior design, fire-fighting and safety
+            systems, infrastructure works, insulation systems, and epoxy flooring —
+            supported by a complete fit-out, finishing, furnishing and maintenance capability.
+          </p>
+          <p class="intro__text reveal-on-scroll">
+            As our name suggests, we believe great structures begin with strong roots:
+            disciplined planning, sound engineering and an uncompromising commitment to
+            our clients. Every member of our team adds to ROOTBUILD.
+          </p>
+          <div class="about-tags">
+            <div class="about-tag reveal-on-scroll">
+              <span class="about-tag__title">Integrated</span>
+              <span class="about-tag__text">Design – Build – Finish – Maintain</span>
+            </div>
+            <div class="about-tag reveal-on-scroll">
+              <span class="about-tag__title">Multi-Sector</span>
+              <span class="about-tag__text">Buildings · Infrastructure · Industrial</span>
+            </div>
+            <div class="about-tag reveal-on-scroll">
+              <span class="about-tag__title">KSA Focused</span>
+              <span class="about-tag__text">Aligned with Vision 2030</span>
+            </div>
+          </div>
+          <a href="about.html" class="view-all-link reveal-on-scroll">More about ROOTBUILD <span>→</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STATS ============ -->
+
+  <!-- ============ WHY ROOTBUILD ============ -->
+  <section class="spotlight spotlight--dark">
+    <div class="spotlight__content reveal-on-scroll">
+      <p class="section-label">02 — Why ROOTBUILD</p>
+      <h2 class="spotlight__title">A focused contractor with major-project discipline</h2>
+      <p class="spotlight__text">
+        Our clients choose ROOTBUILD because we combine the agility of a focused
+        contractor with the discipline of a major-project organization — one accountable
+        partner from design through finishing, furnishing and maintenance.
+      </p>
+      <ul class="why-list">
+        <li><strong>Single point of responsibility</strong> — One accountable partner from design through finishing, furnishing and maintenance.</li>
+        <li><strong>Experienced engineering team</strong> — Specialists applying the latest methods to meet global quality standards.</li>
+        <li><strong>Local compliance</strong> — Aligned with the Saudi Building Code, Civil Defence and Saudi Contractors Authority.</li>
+        <li><strong>Quality, time &amp; cost</strong> — A delivery model built around cost studies, schedules and rigorous quality control.</li>
+      </ul>
+      <a href="about.html" class="view-all-link" style="color:#fff;margin-top:var(--space-md)">Read our full story <span>→</span></a>
+    </div>
+    <div class="spotlight__image">
+      <div class="spotlight__photo">
+        <img src="https://images.unsplash.com/photo-1531834685032-c34bf0d84c77?auto=format&fit=crop&w=1200&q=80" alt="ROOTBUILD engineering team reviewing works on an active construction site" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES TEASER ============ -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="pillars__header">
+        <p class="section-label reveal-on-scroll">03 — Business Specialties &amp; Scope of Services</p>
+        <h2 class="section-title reveal-on-scroll">Eight specialties.<br />One integrated delivery.</h2>
+        <p class="services__intro reveal-on-scroll">
+          ROOTBUILD offers a fully integrated range of services covering the complete
+          project lifecycle — from concept design to long-term maintenance.
+        </p>
+      </div>
+      <div class="svc-teaser-grid">
+        <a href="services.html#architectural-design" class="svc-teaser reveal-on-scroll">
+          <span class="svc-teaser__num">01</span>
+          <h3 class="svc-teaser__title">Architectural &amp; Interior Design</h3>
+          <p class="svc-teaser__text">Functional designs tailored to create comfortable, productive spaces.</p>
+        </a>
+        <a href="services.html#fire-safety" class="svc-teaser reveal-on-scroll">
+          <span class="svc-teaser__num">03</span>
+          <h3 class="svc-teaser__title">Fire-Fighting &amp; Safety Systems</h3>
+          <p class="svc-teaser__text">Design, supply, installation and commissioning per NFPA and Civil Defence requirements.</p>
+        </a>
+        <a href="services.html#infrastructure" class="svc-teaser reveal-on-scroll">
+          <span class="svc-teaser__num">04</span>
+          <h3 class="svc-teaser__title">Infrastructure Works</h3>
+          <p class="svc-teaser__text">Civil and site infrastructure forming the backbone of developments.</p>
+        </a>
+        <a href="services.html#fit-out" class="svc-teaser reveal-on-scroll">
+          <span class="svc-teaser__num">02</span>
+          <h3 class="svc-teaser__title">Fit-Out, Contracting &amp; Finishing</h3>
+          <p class="svc-teaser__text">Turnkey fit-out for commercial, retail, hospitality and residential spaces.</p>
+        </a>
+      </div>
+      <a href="services.html" class="view-all-link reveal-on-scroll">View all 8 services <span>→</span></a>
+    </div>
+  </section>
+
+<!-- ============ FEATURED PROJECTS ============ -->
+  <section class="projects">
+    <div class="container">
+      <div class="pillars__header">
+        <p class="section-label reveal-on-scroll">04 — Featured Work</p>
+        <h2 class="section-title reveal-on-scroll">Villas, compounds &amp; resorts,<br />finished across Egypt.</h2>
+      </div>
+      <div class="projects__grid">
+        <div class="project-card reveal-on-scroll">
+          <span class="project-card__num">01</span>
+          <h4>Sodic Allegria Compound</h4>
+          <p class="project-card__client">6th of October</p>
+          <p class="project-card__scope">External finishing works for 122 luxury villas.</p>
+        </div>
+        <div class="project-card reveal-on-scroll">
+          <span class="project-card__num">02</span>
+          <h4>New Giza Project</h4>
+          <p class="project-card__client">Giza</p>
+          <p class="project-card__scope">External finishing and facade works for 40 villas.</p>
+        </div>
+        <div class="project-card reveal-on-scroll">
+          <span class="project-card__num">03</span>
+          <h4>Saada Compound (Horizon Co.)</h4>
+          <p class="project-card__client">New Cairo</p>
+          <p class="project-card__scope">External finishing and contracting works for 10 villas.</p>
+        </div>
+        <div class="project-card reveal-on-scroll">
+          <span class="project-card__num">04</span>
+          <h4>Swan Lake (Hassan Allam)</h4>
+          <p class="project-card__client">Sidi Abdel Rahman</p>
+          <p class="project-card__scope">Plastering, painting, and thermal/water insulation works for 16 chalets.</p>
+        </div>
+        <div class="project-card reveal-on-scroll">
+          <span class="project-card__num">05</span>
+          <h4>Bo Island Resort</h4>
+          <p class="project-card__client">North Coast</p>
+          <p class="project-card__scope">Construction, insulation, and painting works for 6 townhouses.</p>
+        </div>
+        <div class="project-card reveal-on-scroll">
+          <span class="project-card__num">06</span>
+          <h4>Beverly Hills Sodic</h4>
+          <p class="project-card__client">6th of October</p>
+          <p class="project-card__scope">Plastering, insulation, mosaic, and marble works for 2 swimming pools.</p>
+        </div>
+        <div class="project-card reveal-on-scroll">
+          <span class="project-card__num">07</span>
+          <h4>Hyde Park Compound</h4>
+          <p class="project-card__client">New Cairo</p>
+          <p class="project-card__scope">Plastering, insulation, mosaic, and marble works for 2 swimming pools.</p>
+        </div>
+        <div class="project-card reveal-on-scroll">
+          <span class="project-card__num">08</span>
+          <h4>Private Villa — Villette Compound</h4>
+          <p class="project-card__client">New Cairo</p>
+          <p class="project-card__scope">Premium integrated interior finishing works.</p>
+        </div>
+        <div class="project-card reveal-on-scroll">
+          <span class="project-card__num">09</span>
+          <h4>Private Villa</h4>
+          <p class="project-card__client">Fifth Settlement</p>
+          <p class="project-card__scope">Premium integrated interior finishing works.</p>
+        </div>
+      </div>
+      <a href="projects.html" class="view-all-link reveal-on-scroll">View our full project portfolio <span>→</span></a>
+    </div>
+  </section>
+<!-- ============ SITE GALLERY ============ -->
+<section class="gallery gallery--dark">
+    <div class="container">
+      <div class="pillars__header">
+        <p class="section-label reveal-on-scroll">05 — On Site</p>
+        <h2 class="section-title reveal-on-scroll">Our developments & construction sites</h2>
+        <p class="services__intro reveal-on-scroll">A look at the active sites, structures and finished developments ROOTBUILD teams work across every day.</p>
+      </div>
+   <div class="gallery__rows">
+
+  <!-- Row 1 — Fire Projects -->
+  <div class="gallery__row">
+    <p class="gallery__row-title">Fire-Fighting &amp; Safety Projects</p>
+    <div class="gallery__track-wrap">
+      <div class="gallery__track">
+        <a href="fire-projects.html" class="gallery__item"><img src="Images/Fire/1.png" alt="Fire project" loading="lazy"/><div class="gallery__item-caption">Fire System Install</div></a>
+        <a href="fire-projects.html" class="gallery__item"><img src="Images/Fire/2.png" alt="Fire project" loading="lazy"/><div class="gallery__item-caption">Fire System Install</div></a>
+        <a href="fire-projects.html" class="gallery__item"><img src="Images/Fire/3.png" alt="Fire project" loading="lazy"/><div class="gallery__item-caption">Fire System Install</div></a>
+        <!-- duplicate the same set again immediately below for a seamless loop -->
+        <a href="fire-projects.html" class="gallery__item"><img src="Images/Fire/4.png" alt="Fire project" loading="lazy"/><div class="gallery__item-caption">Fire System Install</div></a>
+        <a href="fire-projects.html" class="gallery__item"><img src="Images/Fire/5.png" alt="Fire project" loading="lazy"/><div class="gallery__item-caption">Fire System Install</div></a>
+        <a href="fire-projects.html" class="gallery__item"><img src="Images/Fire/6.png" alt="Fire project" loading="lazy"/><div class="gallery__item-caption">Fire System Install</div></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Row 2 — Epoxy Flooring & Waterproofing -->
+  <div class="gallery__row gallery__row--reverse">
+    <p class="gallery__row-title">Industrial Epoxy Flooring &amp; Waterproofing</p>
+    <div class="gallery__track-wrap">
+      <div class="gallery__track">
+        <a href="industrial-projects.html" class="gallery__item"><img src="Images/Industrial/1.jpeg" alt="Epoxy flooring" loading="lazy"/><div class="gallery__item-caption">Epoxy Flooring</div></a>
+        <a href="industrial-projects.html" class="gallery__item"><img src="Images/Industrial/2.jpeg" alt="Waterproofing" loading="lazy"/><div class="gallery__item-caption">Waterproofing</div></a>
+        <a href="industrial-projects.html" class="gallery__item"><img src="Images/Industrial/3.jpeg" alt="Epoxy flooring" loading="lazy"/><div class="gallery__item-caption">Epoxy Flooring</div></a>
+        <a href="industrial-projects.html" class="gallery__item"><img src="Images/Industrial/5.jpeg" alt="Epoxy flooring" loading="lazy"/><div class="gallery__item-caption">Epoxy Flooring</div></a>
+        <a href="industrial-projects.html" class="gallery__item"><img src="Images/Industrial/6.jpeg" alt="Waterproofing" loading="lazy"/><div class="gallery__item-caption">Waterproofing</div></a>
+        <a href="industrial-projects.html" class="gallery__item"><img src="Images/Industrial/7.jpeg" alt="Epoxy flooring" loading="lazy"/><div class="gallery__item-caption">Epoxy Flooring</div></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Row 3 — Fit-Out, Finishing & Contracting -->
+  <div class="gallery__row">
+    <p class="gallery__row-title">Architectural Fit-Out, Finishing &amp; Contracting</p>
+    <div class="gallery__track-wrap">
+      <div class="gallery__track">
+        <a href="fitout-projects.html" class="gallery__item"><img src="Images/Fitout/20.jpeg" alt="Fit-out project" loading="lazy"/><div class="gallery__item-caption">Fit-Out &amp; Finishing</div></a>
+        <a href="fitout-projects.html" class="gallery__item"><img src="Images/Fitout/51.jpeg" alt="Fit-out project" loading="lazy"/><div class="gallery__item-caption">Fit-Out &amp; Finishing</div></a>
+        <a href="fitout-projects.html" class="gallery__item"><img src="Images/Fitout/54.jpeg" alt="Fit-out project" loading="lazy"/><div class="gallery__item-caption">Fit-Out &amp; Finishing</div></a>
+        <a href="fitout-projects.html" class="gallery__item"><img src="Images/Fitout/20.jpeg" alt="Fit-out project" loading="lazy"/><div class="gallery__item-caption">Fit-Out &amp; Finishing</div></a>
+        <a href="fitout-projects.html" class="gallery__item"><img src="Images/Fitout/51.jpeg" alt="Fit-out project" loading="lazy"/><div class="gallery__item-caption">Fit-Out &amp; Finishing</div></a>
+        <a href="fitout-projects.html" class="gallery__item"><img src="Images/Fitout/54.jpeg" alt="Fit-out project" loading="lazy"/><div class="gallery__item-caption">Fit-Out &amp; Finishing</div></a>
+      </div>
+    </div>
+  </div>
+
+</div>
+<a href="projects.html" class="view-all-link reveal-on-scroll">
+    View All Projects <span>→</span>
+</a>
+      </div>
+    </div>
+  </section>
+  <!-- ============ CLIENTS ============
+  <section class="certifications">
+    <div class="container">
+      <p class="section-label reveal-on-scroll" style="text-align:center">06 — Clients &amp; Partners</p>
+      <h2 class="section-title reveal-on-scroll" style="text-align:center">Trusted by leading contractors</h2>
+      <div class="certifications__grid">
+        <div class="cert-item reveal-on-scroll"><div class="cert-item__logo">NAFFCO</div><p>National Fire Fighting Co</p></div>
+        <div class="cert-item reveal-on-scroll"><div class="cert-item__logo">Grauntee</div><p>Grauntee Business Co</p></div>
+        <div class="cert-item reveal-on-scroll"><div class="cert-item__logo">Alfouzan</div><p>Alfouzan Contracting Co</p></div>
+        <div class="cert-item reveal-on-scroll"><div class="cert-item__logo">Shaporji<br/>Palong</div><p>Shaporji Palong Co</p></div>
+        <div class="cert-item reveal-on-scroll"><div class="cert-item__logo">Al Saif</div><p>Al Saif Contracting Co</p></div>
+        <div class="cert-item reveal-on-scroll"><div class="cert-item__logo">Arabian<br/>Centers</div><p>Arabian Centers Co</p></div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- ============ COMPANY PROFILE DOWNLOAD ============ -->
+  <section class="profile-section">
+    <div class="container">
+      <div class="profile-inner">
+        <div class="profile-text reveal-on-scroll">
+          <p class="section-label">07 — Company Profile</p>
+          <h2 class="profile-title">Learn more about<br />everything we deliver.</h2>
+          <p class="profile-desc">
+            Our company profile outlines ROOTBUILD's full scope of services, project delivery
+            approach, completed projects, client list, and compliance credentials — all in one
+            document you can share with your team.
+          </p>
+          <ul class="profile-highlights">
+            <li>8 integrated service specialties</li>
+            <li>12+ completed projects across the Kingdom</li>
+            <li>Full QHSE framework &amp; SBC compliance</li>
+            <li>Clients, registrations &amp; certifications</li>
+          </ul>
+          <div class="profile-actions">
+            <!-- Replace href with your real PDF path once uploaded, e.g. documents/rootbuild-profile-2026.pdf -->
+            <a href="documents/ROOTBUILD_Company_Profile_2026.pdf" download class="profile-download-btn" id="profileDownload">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Download Profile (PDF)
+            </a>
+            <a href="contact.html" class="profile-contact-link">Request a printed copy <span>→</span></a>
+          </div>
+        </div>
+        <div class="profile-visual reveal-on-scroll">
+          <div class="profile-card">
+            <!-- Book cover mockup -->
+            <div class="profile-card__spine"></div>
+            <div class="profile-card__face">
+              <div class="profile-card__logo">
+                <img src="assets/logo.png" alt="ROOTBUILD" />
+              </div>
+              <div class="profile-card__label">Company Profile</div>
+              <div class="profile-card__year">2026</div>
+              <div class="profile-card__tagline">"Great structures begin<br/>with strong roots."</div>
+              <div class="profile-card__meta">
+                <span>Integrated Contracting</span>
+                <span>Kingdom of Saudi Arabia</span>
+              </div>
+            </div>
+          </div>
+          <div class="profile-card-shadow"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT CTA ============ -->
+  <section class="contact-strip">
+    <div class="container">
+      <div class="contact-strip__inner">
+        <div class="reveal-on-scroll">
+          <h3>Let's build something lasting together</h3>
+          <p>Our team is happy to discuss your project, our approach, and how ROOTBUILD can deliver it end-to-end.</p>
+        </div>
+        <a href="contact.html" class="btn btn--primary reveal-on-scroll">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="footer__logo">
+            <img src="assets/logo.png" alt="ROOTBUILD" class="footer__logo-img" />
+          </a>
+          <p>Great structures begin with strong roots.<br />Integrated contracting across the Kingdom of Saudi Arabia.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Specialties</h4>
+          <ul>
+            <li><a href="services.html#fire-safety">Fire-Fighting &amp; Safety</a></li>
+            <li><a href="services.html#infrastructure">Infrastructure Works</a></li>
+            <li><a href="services.html#fit-out">Fit-Out &amp; Finishing</a></li>
+            <li><a href="services.html#epoxy-flooring">Epoxy Flooring</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:info@rootbuild-sa.com">info@rootbuild-sa.com</a></li>
+            <li><a href="tel:+966542033019">+966 54 203 3019</a></li>
+            <li><a href="tel:+966541293406">+966 54 129 3406</a></li>
+            <li><a href="contact.html">Kingdom of Saudi Arabia</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2026 ROOTBUILD. All rights reserved.</p>
+        <div class="footer__bottom-links">
+          <a href="documents/ROOTBUILD_Company_Profile_2026.pdf" download>Download Profile</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp floating button -->
+  <a href="https://wa.me/966542033019" class="whatsapp-fab" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+</div><!-- /content-wrapper -->
+<script src="js/main.js"></script>
+</body>
+</html>

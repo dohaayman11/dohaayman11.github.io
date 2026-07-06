@@ -1,0 +1,286 @@
+/* ============================================
+   ROOTBUILD — WORKS PAGE STYLES (works.css)
+   Load after style.css, home.css, projects.css
+   Covers: project text list + gallery title + photo grid
+   ============================================ */
+
+.page-banner-works{
+    position:relative;
+    min-height:60vh; /* أو 100vh */
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+    background:var(--navy-dark);
+    padding-top:6rem;
+}
+.page-banner__bg{position:absolute;
+      align-items:center;
+inset:0;background-position:center;background-size:cover;background-repeat:no-repeat}
+.page-banner__overlay{
+  position:absolute;
+  inset:0;
+  background:
+        radial-gradient(
+            circle at bottom left,
+            rgba(17,37,64,.85) 0%,
+            rgba(17,37,64,.55) 25%,
+            rgba(17,37,64,.25) 45%,
+            transparent 70%
+     ),
+ linear-gradient(
+        to bottom,
+        #fff 5%,
+        rgba(255,255,255,.9) 15%,
+        rgba(255,255,255,.4) 35%,
+        transparent 60%
+    );
+        
+}
+.page-banner__crumb{
+    font-size:.72rem;
+    letter-spacing:.18em;
+    text-transform:uppercase;
+    color:var(--copper);
+    margin-bottom:var(--space-sm);
+    display:flex;
+    justify-content:start;
+    align-items:start;
+    gap:.5rem;
+}.page-banner__crumb a{color:#fff;transition:var(--transition)}
+.page-banner__crumb a:hover{color:var(--copper)}
+/* ── SECTION WRAPPER ── */
+.works-section {
+  padding: var(--space-2xl) 0;
+  background: #fff;
+}
+
+.works-section .container {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
+
+/* ── INTRO LABEL ── */
+.works-intro {
+  text-align: center;
+  max-width: 720px;
+margin: 0 auto 4rem;
+}
+.works-intro .section-label {
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.2rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--navy);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.works-intro p {
+  color: var(--color-muted);
+  font-size: 1.02rem;
+  line-height: 1.75;
+}
+
+/* ============================================
+   PROJECT LIST — clean numbered rows
+   ============================================ */
+.works-list {
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+  margin: 0 auto var(--space-2xl);
+  border-top: 1px solid var(--color-border);
+}
+
+.works-list__item {
+  display: grid;
+  grid-template-columns: 64px 1fr auto;
+  align-items: start;
+  gap: var(--space-md);
+  padding: var(--space-md) var(--space-sm);
+  border-bottom: 1px solid var(--color-border);
+  transition: var(--transition);
+  position: relative;
+}
+
+.works-list__item:hover {
+  background: var(--cream);
+  padding-left: var(--space-md);
+}
+
+.works-list__num {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--copper);
+  line-height: 1;
+  padding-top: .1rem;
+}
+
+.works-list__body h3 {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--navy-dark);
+  line-height: 1.3;
+  margin-bottom: .4rem;
+}
+
+.works-list__body h3 em {
+  font-style: normal;
+  font-weight: 500;
+  font-size: .82rem;
+  color: var(--color-muted);
+  margin-left: .3rem;
+}
+
+.works-list__body p {
+  font-size: .92rem;
+  color: var(--color-muted);
+  line-height: 1.65;
+}
+
+.works-list__body p strong {
+  color: var(--brown);
+  font-weight: 600;
+}
+
+.works-list__loc {
+  flex-shrink: 0;
+  align-self: center;
+  font-size: .68rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--navy);
+    background: #def5fa;
+      border: 1px solid rgba(34, 72, 122, .18);
+  padding: .4rem .8rem;
+  border-radius: 100px;
+  white-space: nowrap;
+  text-align: center;
+}
+
+/* ============================================
+   GALLERY TITLE — sits between list and photos
+   ============================================ */
+.works-gallery-title {
+  text-align: center;
+  max-width: 700px;
+margin: 0 auto 2rem;
+}
+
+.works-gallery-title .section-label {
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.2rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--navy);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.works-gallery-title h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 3.2vw, 2.3rem);
+  font-weight: 200;
+  color: var(--navy-dark);
+  line-height: 1.2;
+  margin-bottom: var(--space-sm);
+}
+
+.works-gallery-title p {
+  color: var(--color-muted);
+  font-size: .98rem;
+  line-height: 1.7;
+}
+
+/* ============================================
+   PHOTO GRID — masonry-style columns
+   ============================================ */
+.works-photo-grid {
+  columns: 4;
+  column-gap: 10px;
+}
+
+.works-photo-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+  margin-bottom: 10px;
+  break-inside: avoid;
+  display: block;
+  background: var(--navy-dark);
+}
+
+.works-photo-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform .6s cubic-bezier(.4, 0, .2, 1);
+}
+
+.works-photo-item:hover img {
+  transform: scale(1.05);
+}
+
+.works-photo-item::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(17, 37, 64, .68) 0%, transparent 45%);
+  opacity: 0;
+  transition: var(--transition);
+}
+
+.works-photo-item:hover::after {
+  opacity: 1;
+}
+
+.works-photo-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: .9rem 1rem;
+  color: #fff;
+  font-size: .78rem;
+  font-weight: 600;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: var(--transition);
+  z-index: 1;
+}
+
+.works-photo-item:hover .works-photo-caption {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 1100px) {
+  .works-photo-grid { columns: 3; }
+}
+
+@media (max-width: 768px) {
+  .works-list__item {
+    grid-template-columns: 44px 1fr;
+  }
+  .works-list__loc {
+    grid-column: 2 / -1;
+    justify-self: start;
+    margin-top: .5rem;
+  }
+  .works-photo-grid { columns: 2; }
+}
+
+@media (max-width: 480px) {
+  .works-photo-grid { columns: 1; }
+}
