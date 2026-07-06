@@ -237,61 +237,7 @@
 
 /* Logo text colour flips */
 /* Navbar links */
-.nav__inner{
-    max-width:var(--max-w);
-    margin:0 auto;
 
-    display:flex;
-    align-items:center;      /* مهم */
-    justify-content:space-between;
-}
-
-.nav__logo{
-    display:flex;
-    align-items:center;
-    gap:12px;
-}
-
-.nav__links{
-    display:flex;
-    align-items:center;      /* مهم */
-    gap:2rem;
-    margin:0;
-    padding:0;
-    list-style:none;
-}
-
-.nav__links li{
-    display:flex;
-    align-items:center;
-}
-
-.nav__links a{
-    color:var(--navy);
-    font-size:1rem;
-    font-weight:700;
-    line-height:1;          /* يمنع نزول النص */
-    display:inline-flex;
-    align-items:center;
-    height:100%;
-}
-
-/* Mobile menu open on white bg */
-.nav__links.open {
-  display: flex !important;
-  flex-direction: column;
-  position: absolute;
-  top: 100%; left: 0; right: 0;
-  background: #fff;
-  border-top: 2px solid var(--color-border);
-  padding: var(--space-md);
-  gap: var(--space-sm);
-}
-.nav__links.open a { color: var(--navy) !important; }
-.nav.scrolled{background:rgb(249 249 249 / 97%);;backdrop-filter:blur(14px);box-shadow:0 2px 24px rgba(0,0,0,.2);padding:.65rem var(--space-md)} 
-.nav.scrolled .nav__logo-img{height:38px} */
-.nav.scrolled .nav__links a{color:#fff}
-.nav.scrolled .nav__logo-word{font-size:1.1rem}
 
 /* ── PAGE TRANSITION ── */
 #content-wrapper {

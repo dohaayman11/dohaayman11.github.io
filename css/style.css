@@ -57,7 +57,7 @@ ul{list-style:none}
     gap:12px;
 }
 .nav.scrolled .nav__logo-img{height:38px} */
-.nav.scrolled .nav__links a{color:#fff}
+/* .nav.scrolled .nav__links a{color:#fff} */
 /* SVG fallback logo-word (used in footer + pages without image) */
 .nav__logo-mark{flex-shrink:0}
 .nav__logo-mark path{fill:none;stroke:currentColor;stroke-width:2.2}
@@ -516,10 +516,11 @@ background-image:url("../assets/residential_project.png");
   opacity: 1; transform: translateY(0);
 }
 /* ── Gallary for projects page ── */
+
 /* ── HORIZONTAL AUTO-SCROLL GALLERY ROWS (home) ── */
 .gallery__rows{display:flex;flex-direction:column;gap:var(--space-lg)}
 .gallery__row-title{font-family:var(--font-display);font-size:1.9rem;font-weight:700;color:var(--navy-dark);margin-bottom:.4rem;padding:0 var(--space-md)}
-.gallery__row-desc{font-size:1rem;color:var(--color-muted);margin-bottom:1.2rem;padding:0 var(--space-md);max-width:560px;line-height:1.6}
+.gallery__row-desc{font-size:1rem;color:var(--color-muted);margin-bottom:1.2rem;padding:0 var(--space-md);line-height:1.6}
 .gallery__row-more{display:inline-flex;align-items:center;gap:.4rem;margin:1rem var(--space-md) 0;font-weight:700;font-size:.9rem;color:var(--navy-dark)}
 .gallery__row-more span{transition:var(--transition)}
 .gallery__row-more:hover{color:var(--copper)}
