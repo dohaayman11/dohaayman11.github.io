@@ -20,23 +20,23 @@ if (nav) {
   });
 })();
 
-/* ── 3. NAV: mobile hamburger ── */
-const hamburger = document.getElementById('hamburger');
-const navLinks  = document.querySelector('.nav__links');
-if (hamburger && navLinks) {
-  hamburger.addEventListener('click', () => {
-    const open = navLinks.classList.toggle('open');
-    hamburger.classList.toggle('open', open);
-    hamburger.setAttribute('aria-expanded', open);
-  });
-  navLinks.querySelectorAll('a').forEach(a =>
-    a.addEventListener('click', () => {
-      navLinks.classList.remove('open');
-      hamburger.classList.remove('open');
-      hamburger.setAttribute('aria-expanded', false);
-    })
-  );
-}
+// /* ── 3. NAV: mobile hamburger ── */
+// const hamburger = document.getElementById('hamburger');
+// const navLinks  = document.querySelector('.nav__links');
+// if (hamburger && navLinks) {
+//   hamburger.addEventListener('click', () => {
+//     const open = navLinks.classList.toggle('open');
+//     hamburger.classList.toggle('open', open);
+//     hamburger.setAttribute('aria-expanded', open);
+//   });
+//   navLinks.querySelectorAll('a').forEach(a =>
+//     a.addEventListener('click', () => {
+//       navLinks.classList.remove('open');
+//       hamburger.classList.remove('open');
+//       hamburger.setAttribute('aria-expanded', false);
+//     })
+//   );
+// }
 
 /* ── 4. Smooth scroll for in-page anchors ── */
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -258,10 +258,30 @@ function generateGallery(containerId, folder, start, end,extinstion) {
 
 generateGallery('FitoutPhotoGrid', 'Fitout', 1,56,'jpeg');
 generateGallery('FirePhotoGrid', 'Fire', 1,6,'png');
-generateGallery('worksPhotoGrid', 'Industrial', 1,14,'jpeg');
+generateGallery('IndustrialPhotoGrid', 'Industrial', 1,14,'jpeg');
+generateGallery('LandscapePhotoGrid', 'Landscape', 1,22,'jpeg');
 
-// generateGallery('worksPhotoGrid', 'Fire', 1, 12) 
+
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('navLinks');
+
+if (hamburger && navLinks) {
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('open');
+    navLinks.classList.toggle('open');
+  });
+
+  document.querySelectorAll('#navLinks a').forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('open');
+      navLinks.classList.remove('open');
+    });
+  });
+}
 //drop button 
+// ===============================
+// Projects Dropdown
+// ===============================
 const projectsToggle = document.querySelector('.nav__dropdown-toggle');
 const dropdownMenu = document.querySelector('.dropdown-menu');
 

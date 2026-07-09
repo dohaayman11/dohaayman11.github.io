@@ -1,7 +1,7 @@
 import os
 
 # Folder path
-folder_path = r"Images\Fire"
+folder_path = r"Images\Landscape"
 
 # Supported extensions
 image_extensions = ('.jpg', '.jpeg', '.png', '.bmp', '.gif', '.webp')

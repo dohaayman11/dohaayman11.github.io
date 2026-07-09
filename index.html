@@ -12,10 +12,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Pliant:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-<div id="content-wrapper">
+  
+<!-- <div id="content-wrapper"> -->
 
   <!-- ============ NAVIGATION ============ -->
- <nav class="nav" id="nav">
+<nav class="nav" id="nav">
   <div class="nav__inner">
 
     <a href="index.html" class="nav__logo">
@@ -24,25 +25,26 @@
         ROOT<em>BUILD</em>
       </span>
     </a>
-    <ul class="nav__links">
+    <ul class="nav__links" id="navLinks">
       <li class="active"><a href="index.html">Home</a></li>
       <li><a href="about.html">About Us</a></li>
       <li><a href="services.html">Services</a></li>
- <li class="nav__dropdown">
-    <button type="button" class="nav__dropdown-toggle">
-        Projects ▾
-    </button>
-    <ul class="dropdown-menu">
-        <li><a href="fitout-projects.html">Finishing Works</a></li>
-        <li><a href="fire-projects.html">Fire Protection Works</a></li>
-        <li><a href="industrial-projects.html">Industrial Works</a></li>
-        <li><a href="landscape-projects.html">Landscape Works</a></li>
-    </ul>
-</li> 
-  <li><a href="contact.html">Contact</a></li>
+      <li class="nav__dropdown">
+        <button type="button" class="nav__dropdown-toggle">
+          Projects ▾
+        </button>
+        <ul class="dropdown-menu">
+          <li><a href="fitout-projects.html">Finishing Works</a></li>
+          <li><a href="fire-projects.html">Fire Protection Works</a></li>
+          <li><a href="industrial-projects.html">Industrial Works</a></li>
+          <li><a href="landscape-projects.html">Landscape Works</a></li>
+        </ul>
+      </li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
 
-    <button class="nav__hamburger" id="hamburger">
+    
+    <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
 
@@ -340,6 +342,7 @@
 
     <div class="gallery__track-wrap">
       <div class="gallery__track">
+        
         <a href="fitout-projects.html" class="gallery__item"><img src="Images/Fitout/20.jpeg" alt="Fit-out project" loading="lazy"/><div class="gallery__item-caption">Fit-Out &amp; Finishing</div></a>
         <a href="fitout-projects.html" class="gallery__item"><img src="Images/Fitout/51.jpeg" alt="Fit-out project" loading="lazy"/><div class="gallery__item-caption">Fit-Out &amp; Finishing</div></a>
         <a href="fitout-projects.html" class="gallery__item"><img src="Images/Fitout/54.jpeg" alt="Fit-out project" loading="lazy"/><div class="gallery__item-caption">Fit-Out &amp; Finishing</div></a>
@@ -357,16 +360,15 @@
 <p class="gallery__row-desc">Outdoor spaces designed and executed for residential and commercial sites.</p>
     <div class="gallery__track-wrap">
       <div class="gallery__track">
-        <a href="landscape-projects.html" class="gallery__item"><img src="Images/Fitout/20.jpeg" alt="Fit-out project" loading="lazy"/><div class="gallery__item-caption">Fit-Out &amp; Finishing</div></a>
-        <a href="landscape-projects.html" class="gallery__item"><img src="Images/Fitout/51.jpeg" alt="Fit-out project" loading="lazy"/><div class="gallery__item-caption">Fit-Out &amp; Finishing</div></a>
-        <a href="landscape-projects.html" class="gallery__item"><img src="Images/Fitout/54.jpeg" alt="Fit-out project" loading="lazy"/><div class="gallery__item-caption">Fit-Out &amp; Finishing</div></a>
-        <a href="landscape-projects.html" class="gallery__item"><img src="Images/Fitout/20.jpeg" alt="Fit-out project" loading="lazy"/><div class="gallery__item-caption">Fit-Out &amp; Finishing</div></a>
-        <a href="landscape-projects.html" class="gallery__item"><img src="Images/Fitout/51.jpeg" alt="Fit-out project" loading="lazy"/><div class="gallery__item-caption">Fit-Out &amp; Finishing</div></a>
-        <a href="landscape-projects.html" class="gallery__item"><img src="Images/Fitout/54.jpeg" alt="Fit-out project" loading="lazy"/><div class="gallery__item-caption">Fit-Out &amp; Finishing</div></a>
+        <a href="landscape-projects.html" class="gallery__item"><img src="Images/Landscape/8.jpeg" alt="Fit-out project" loading="lazy"/><div class="gallery__item-caption">Fit-Out &amp; Finishing</div></a>
+        <a href="landscape-projects.html" class="gallery__item"><img src="Images/Landscape/5.jpeg" alt="Fit-out project" loading="lazy"/><div class="gallery__item-caption">Fit-Out &amp; Finishing</div></a>
+        <a href="landscape-projects.html" class="gallery__item"><img src="Images/Landscape/14.jpeg" alt="Fit-out project" loading="lazy"/><div class="gallery__item-caption">Fit-Out &amp; Finishing</div></a>
+        <a href="landscape-projects.html" class="gallery__item"><img src="Images/Landscape/20.jpeg" alt="Fit-out project" loading="lazy"/><div class="gallery__item-caption">Fit-Out &amp; Finishing</div></a>
+        <a href="landscape-projects.html" class="gallery__item"><img src="Images/Landscape/18.jpeg" alt="Fit-out project" loading="lazy"/><div class="gallery__item-caption">Fit-Out &amp; Finishing</div></a>
+        <a href="landscape-projects.html" class="gallery__item"><img src="Images/Landscape/21.jpeg" alt="Fit-out project" loading="lazy"/><div class="gallery__item-caption">Fit-Out &amp; Finishing</div></a>
       </div>
     </div>
   </div>
-
 </div>
 <a href="projects.html" class="view-all-link reveal-on-scroll">
     View All Projects <span>→</span>
@@ -459,7 +461,7 @@
       <div class="footer__grid">
         <div class="footer__brand">
           <a href="index.html" class="footer__logo">
-            <img src="assets/logo.png" alt="ROOTBUILD" class="footer__logo-img" />
+            <img src="assets\logoName.png" alt="ROOTBUILD" class="footer__logo-img" />
           </a>
           <p>Great structures begin with strong roots.<br />Integrated contracting across the Kingdom of Saudi Arabia.</p>
         </div>
