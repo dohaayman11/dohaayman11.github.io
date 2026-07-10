@@ -20,24 +20,6 @@ if (nav) {
   });
 })();
 
-// /* ── 3. NAV: mobile hamburger ── */
-// const hamburger = document.getElementById('hamburger');
-// const navLinks  = document.querySelector('.nav__links');
-// if (hamburger && navLinks) {
-//   hamburger.addEventListener('click', () => {
-//     const open = navLinks.classList.toggle('open');
-//     hamburger.classList.toggle('open', open);
-//     hamburger.setAttribute('aria-expanded', open);
-//   });
-//   navLinks.querySelectorAll('a').forEach(a =>
-//     a.addEventListener('click', () => {
-//       navLinks.classList.remove('open');
-//       hamburger.classList.remove('open');
-//       hamburger.setAttribute('aria-expanded', false);
-//     })
-//   );
-// }
-
 /* ── 4. Smooth scroll for in-page anchors ── */
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', e => {
@@ -155,8 +137,16 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 })();
 
 /* ── 8. Page transitions (Multiplex smooth fade+slide) ── */
+/* ── 8. Page transitions with loader overlay ── */
 (function initPageTransitions() {
   const wrapper = document.getElementById('content-wrapper');
+  const loader  = document.getElementById('page-loader');
+
+  // Hide loader once new page has rendered
+  if (loader) {
+    requestAnimationFrame(() => loader.classList.remove('active'));
+  }
+
   if (!wrapper) return;
 
   // Fade in on load
@@ -170,7 +160,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
   });
 
-  // Fade out on internal link navigation
+  // Show loader + fade out on internal link navigation
   document.querySelectorAll('a[href]').forEach(link => {
     const href = link.getAttribute('href');
     if (!href || href.startsWith('#') || href.startsWith('mailto') || href.startsWith('tel') || href.startsWith('http') || href.includes('wa.me')) return;
@@ -179,6 +169,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       e.preventDefault();
       wrapper.style.opacity = '0';
       wrapper.style.transform = 'translateY(-12px)';
+      loader?.classList.add('active');
       setTimeout(() => { window.location.href = href; }, 380);
     });
   });
@@ -281,27 +272,55 @@ if (hamburger && navLinks) {
 //drop button 
 // ===============================
 // Projects Dropdown
+// ===============================const projectsToggle = document.querySelector('.nav__dropdown-toggle');
+//drop button 
+// ===============================
+// Projects Dropdown
+// ===============================
+//drop button 
+// ===============================
+// Projects Dropdown
 // ===============================
 const projectsToggle = document.querySelector('.nav__dropdown-toggle');
 const dropdownMenu = document.querySelector('.dropdown-menu');
+const navDropdown = document.querySelector('.nav__dropdown');
 
 projectsToggle?.addEventListener('click', (e) => {
+    e.preventDefault();
     e.stopPropagation();
 
-    dropdownMenu.style.opacity =
-        dropdownMenu.style.opacity === '1' ? '0' : '1';
+    const isMobile = window.matchMedia('(max-width: 768px)').matches;
 
-    dropdownMenu.style.visibility =
-        dropdownMenu.style.visibility === 'visible' ? 'hidden' : 'visible';
+    if (isMobile) {
+        // clear any inline styles left over from desktop so CSS classes take over
+        dropdownMenu.style.opacity = '';
+        dropdownMenu.style.visibility = '';
+        dropdownMenu.style.transform = '';
 
-    dropdownMenu.style.transform =
-        dropdownMenu.style.visibility === 'visible'
-            ? 'translateY(0)'
-            : 'translateY(10px)';
+        navDropdown.classList.toggle('open');
+        dropdownMenu.classList.toggle('open');
+    } else {
+        dropdownMenu.style.opacity =
+            dropdownMenu.style.opacity === '1' ? '0' : '1';
+
+        dropdownMenu.style.visibility =
+            dropdownMenu.style.visibility === 'visible' ? 'hidden' : 'visible';
+
+        dropdownMenu.style.transform =
+            dropdownMenu.style.visibility === 'visible'
+                ? 'translateY(0)'
+                : 'translateY(10px)';
+    }
 });
 
 document.addEventListener('click', () => {
-    dropdownMenu.style.opacity = '0';
-    dropdownMenu.style.visibility = 'hidden';
-    dropdownMenu.style.transform = 'translateY(10px)';
+    const isMobile = window.matchMedia('(max-width: 768px)').matches;
+    if (isMobile) {
+        navDropdown?.classList.remove('open');
+        dropdownMenu?.classList.remove('open');
+    } else {
+        dropdownMenu.style.opacity = '0';
+        dropdownMenu.style.visibility = 'hidden';
+        dropdownMenu.style.transform = 'translateY(10px)';
+    }
 });

@@ -516,7 +516,7 @@
 }
 
 @media (max-width: 768px) {
-  .hero__slide-content { padding-top: 28vh; }
+  .hero__slide-content { padding-top: 15vh; }
   .hero__title { font-size: 2.4rem; }
   .hero__controls { bottom: 1.5rem; right: var(--space-sm); gap: .6rem; }
   .hero__arrow { width: 36px; height: 36px; }

@@ -14,37 +14,51 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
 </head>
 <body>
+  <!-- ============ PAGE LOADER ============ -->
+<div id="page-loader" class="page-loader">
+  <div class="page-loader__bg"></div>
+  <div class="page-loader__content">
+    <img src="assets/logo.png" alt="ROOTBUILD" class="page-loader__logo" />
+    <div class="page-loader__ring"></div>
+  </div>
+</div>
 <div id="content-wrapper">
   <!-- ============ NAVIGATION ============ -->
-  <nav class="nav" id="nav">
-    <div class="nav__inner">
-      <a href="index.html" class="nav__logo">
-        <img src="assets/logo.png" alt="ROOTBUILD" class="nav__logo-img" />
-        <span class="nav__logo-word">ROOT<em>BUILD</em></span>
-      </a>
-      <ul class="nav__links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="services.html">Services</a></li>
- <li class="nav__dropdown">
-    <button type="button" class="nav__dropdown-toggle">
-        Projects ▾
+ <nav class="nav" id="nav">
+  <div class="nav__inner">
+
+    <a href="index.html" class="nav__logo">
+      <img src="assets/logo.png" alt="ROOTBUILD" class="nav__logo-img" />
+      <span class="nav__logo-word">
+        ROOT<em>BUILD</em>
+      </span>
+    </a>
+    <ul class="nav__links" id="navLinks">
+     <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li class="nav__dropdown">
+        <button type="button" class="nav__dropdown-toggle">
+          Projects ▾
+        </button>
+        <ul class="dropdown-menu">
+          <li><a href="fitout-projects.html">Finishing Works</a></li>
+          <li><a href="fire-projects.html">Fire Protection Works</a></li>
+          <li class="active"><a href="industrial-projects.html">Industrial Works</a></li>
+          <li><a href="landscape-projects.html">Landscape Works</a></li>
+        </ul>
+      </li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    
+    <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
     </button>
 
-    <ul class="dropdown-menu">
-        <li><a href="fitout-projects.html">Finishing Works</a></li>
-        <li><a href="fire-projects.html">Fire Protection Works</a></li>
-        <li><a href="industrial-projects.html">Industrial Works</a></li>
-        <li><a href="landscape-projects.html">Landscape Works</a></li>
-    </ul>
-</li> 
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-      <button class="nav__hamburger" id="hamburger">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </nav>
+  </div>
+</nav>
+
 
   <!-- ============ PAGE BANNER ============ -->
 <section class="page-banner-works">
