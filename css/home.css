@@ -376,6 +376,31 @@
 .profile-contact-link:hover span { transform: translateX(4px); }
 
 /* Profile book cover */
+.profile-cover{
+  width:100%;
+  display:flex;
+  justify-content:center;
+}
+
+.profile-cover__img{
+  width:100%;
+  max-width:420px;
+  height:auto;
+  display:block;
+  border-radius:16px;
+  box-shadow:0 20px 50px rgba(0,0,0,.15);
+  transition:transform .4s ease;
+}
+
+.profile-cover__img:hover{
+  transform:translateY(-6px);
+}
+
+@media (max-width:768px){
+  .profile-cover__img{
+    max-width:320px;
+  }
+}
 .profile-visual {
   position: relative;
   flex-shrink: 0;

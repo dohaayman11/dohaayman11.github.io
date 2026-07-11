@@ -99,19 +99,39 @@ ul{list-style:none}
     justify-content:space-between;
 }
 .nav.scrolled{background:rgb(249 249 249 / 97%);backdrop-filter:blur(14px);box-shadow:0 2px 24px rgba(0,0,0,.2);padding:.65rem var(--space-md)} 
-.nav__logo-img{height:52px;width:auto;transition:height var(--transition)}
-.nav__logoName-img{height:100px;width:auto;transition:height var(--transition)}
 
 .nav__logo{
-    display:flex;
-    align-items:center;
-    gap:12px;
+  display:flex;
+  align-items:center;
+  gap:12px;
 }
+
+.nav__logo-text{
+  display:flex;
+  flex-direction:column;
+  line-height:1.1;
+}
+
+.nav__logo-subtitle{
+  display:block;
+  font-size:0.68rem;
+  font-weight:800;
+  letter-spacing:0.18em;
+  text-transform:uppercase;
+  color:#20578b;
+  line-height:1.2;
+  margin-top:2px;
+  white-space:nowrap;
+}
+
+.nav__logo-img{height:60px;width:auto;transition:height var(--transition)}
+.nav__logoName-img{height:100px;width:auto;transition:height var(--transition)}
+
 .nav.scrolled .nav__logo-img{height:38px}
 /* SVG fallback logo-word (used in footer + pages without image) */
 .nav__logo-mark{flex-shrink:0}
 .nav__logo-mark path{fill:none;stroke:currentColor;stroke-width:2.2}
-.nav__logo-word{font-family:var(--font-display);font-size:1.3rem;font-weight:700;color:var(--navy);letter-spacing:.01em;line-height:1}
+.nav__logo-word{font-family:var(--font-display);font-size:1.8rem;font-weight:700;color:var(--navy);letter-spacing:.01em;line-height:1}
 .nav__logo-word em{font-style:normal;color:var(--brown)}
 .nav.scrolled .nav__logo-word{font-size:1.1rem}
 .nav__links{
@@ -226,6 +246,19 @@ ul{list-style:none}
     background: #f5f5f5;
 }
 @media (max-width: 768px){
+  .nav__logo-img{height:54px;width:auto;transition:height var(--transition)}
+.nav__logo-word{font-family:var(--font-display);font-size:1.3rem;font-weight:700;color:var(--navy);letter-spacing:.01em;line-height:1}
+.nav__logo-subtitle{
+  display:block;
+  font-size:0.5rem;
+  font-weight:700;
+  letter-spacing:0.18em;
+  text-transform:uppercase;
+  color:#20578b;
+  line-height:1.2;
+  margin-top:2px;
+  white-space:nowrap;
+}
     .nav__links{
         position:absolute;
         top:100%;
