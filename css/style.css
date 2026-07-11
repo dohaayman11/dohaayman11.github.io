@@ -1021,7 +1021,7 @@ background-image:url("../assets/residential_project.png");
 .footer__bottom{padding:var(--space-md) var(--space-md) 0;border-top:1px solid rgba(255,255,255,.07);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:var(--space-sm);position:relative;z-index:1}
 .footer__bottom p{font-size:.78rem;color:rgba(255,255,255,.3)}
 .footer__bottom-links{display:flex;gap:var(--space-md)}
-.footer__bottom-links a{font-size:.78rem;color:rgba(255,255,255,.3);transition:color var(--transition)}
+.footer__bottom-links a{font-size:.78rem;transition:color var(--transition)}
 .footer__bottom-links a:hover{color:rgba(255,255,255,.65)}
 @media(max-width:1024px){
   .footer__brand{border-radius:0 0 120px 0;padding:var(--space-xl) var(--space-md) var(--space-xl)}
