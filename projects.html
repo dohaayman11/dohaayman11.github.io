@@ -1,179 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projects | ROOTBUILD — Integrated Contracting, Kingdom of Saudi Arabia</title>
-  <meta name="description" content="A gallery of ROOTBUILD's architectural fit-out, finishing and contracting projects — luxury villas, compounds and private residences." />
+  <meta name="description"
+    content="A gallery of ROOTBUILD's architectural fit-out, finishing and contracting projects — luxury villas, compounds and private residences." />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/home.css" />
-<link rel="stylesheet" href="css/projects.css" />
+  <link rel="stylesheet" href="css/projects.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
 </head>
+
 <body>
-  <!-- ============ PAGE LOADER ============ -->
-<div id="page-loader" class="page-loader">
-  <div class="page-loader__bg"></div>
-  <div class="page-loader__content">
-    <img src="assets/logoName.png" alt="ROOTBUILD" class="page-loader__logo" />
-    <div class="page-loader__ring"></div>
-  </div>
-</div>
-<div id="content-wrapper">
+  <div id="content-wrapper">
 
-  <!-- ============ NAVIGATION ============ -->
-  <nav class="nav" id="nav">
-    <div class="nav__inner">
-      <a href="index.html" class="nav__logo">
-  <img src="assets/logo.png" alt="ROOTBUILD" class="nav__logo-img" />
+    <!-- ============ NAVIGATION ============ -->
+    <nav class="nav" id="nav">
+      <div class="nav__inner">
+        <a href="index.html" class="nav__logo">
+          <img src="assets/logo.png" alt="ROOTBUILD" class="nav__logo-img" />
+          <span class="nav__logo-word">ROOT<em>BUILD</em></span>
+        </a>
+        <ul class="nav__links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <!-- <li class="active"><a href="projects.html">Projects</a></li> -->
+          <li class="nav__dropdown">
+            <button type="button" class="nav__dropdown-toggle">
+              Projects ▾
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="fitout-projects.html">Finishing Works</a></li>
+              <li><a href="fire-projects.html">Fire Protection Works</a></li>
+              <li><a href="industrial-projects.html">Industrial Works</a></li>
+              <li><a href="landscape-projects.html">Landscape Works</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
 
-  <div class="nav__logo-text">
-    <span class="nav__logo-word">
-      ROOT<em>BUILD</em>
-    </span>
-
-    <span class="nav__logo-subtitle">
-      Construction &amp; Development
-    </span>
-  </div>
-</a>
-      <ul class="nav__links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="services.html">Services</a></li>
-        <!-- <li class="active"><a href="projects.html">Projects</a></li> -->
-         <li class="nav__dropdown">
-    <button type="button" class="nav__dropdown-toggle">
-        Projects ▾
-    </button>
-    <ul class="dropdown-menu">
-        <li><a href="fitout-projects.html">Finishing Works</a></li>
-        <li><a href="fire-projects.html">Fire Protection Works</a></li>
-        <li><a href="industrial-projects.html">Industrial Works</a></li>
-        <li><a href="landscape-projects.html">Landscape Works</a></li>
-    </ul>
-</li> 
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-      <button class="nav__hamburger" id="hamburger">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </nav>
-
-  <!-- ============ PAGE BANNER ============ -->
-  <section class="page-banner">
-    <div class="page-banner__bg" style="background-image:url('assets/Projects_cover.png');"></div>
-    <div class="page-banner__overlay"></div>
-    <div class="page-banner__content">
-      <p class="page-banner__crumb"><a href="index.html">Home</a> / Projects</p>
-      <h1 class="page-banner__title">Our Works</h1>
-      <p class="page-banner__subtitle">A summary of architectural fit-out, finishing, and contracting projects completed across leading residential developments.</p>
- <div style="display:flex; flex-wrap:wrap; gap:1rem; margin-top:1.5rem;">
-  <a href="fire-projects.html" class="btn btn--ghost">View Fire Protection Projects →</a>
-  <a href="industrial-projects.html" class="btn btn--ghost">View Industrial Projects →</a>
-  <a href="fitout-projects.html" class="btn btn--ghost">View Finishing Projects →</a>
-  <a href="landscape-projects.html" class="btn btn--ghost">View Landscape Projects →</a>
-</div>
- 
-    </div>
-  </section>
-
-  <!-- ============ FIT-OUT & FINISHING GALLERY ============ -->
-   <!-- ============ WORK CATEGORIES GALLERY ============ -->
-  <section class="gallery">
-    <div class="container">
-
-      <div class="pillars__header">
-        <p class="section-label reveal-on-scroll">Our Work</p>
-        <h2 class="section-title reveal-on-scroll">Explore by category</h2>
+        <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
       </div>
+    </nav>
 
+    <!-- ============ PAGE BANNER ============ -->
+    <section class="page-banner">
+      <div class="page-banner__bg" style="background-image:url('assets/Projects_cover.png');"></div>
+      <div class="page-banner__overlay"></div>
+      <div class="page-banner__content">
+        <p class="page-banner__crumb"><a href="index.html">Home</a> / Projects</p>
+        <h1 class="page-banner__title">Architectural Fit-Out &amp; Finishing Projects</h1>
+        <p class="page-banner__subtitle">A summary of architectural fit-out, finishing, and contracting projects
+          completed across leading residential developments.</p>
+        <div style="display:flex; flex-wrap:wrap; gap:1rem; margin-top:1.5rem;">
+          <a href="fire-projects.html" class="btn btn--ghost">View Fire Protection Projects →</a>
+          <a href="industrial-projects.html" class="btn btn--ghost">View Industrial Projects →</a>
+          <a href="fitout-projects.html" class="btn btn--ghost">View Finishing Projects →</a>
+          <a href="landscape-projects.html" class="btn btn--ghost">View Landscape Projects →</a>
+        </div>
 
-            <div class="gallery__row-header">
-    <p class="gallery__row-title">Fire Protection Works</p>
-    <a href="fire-projects.html" class="gallery__row-more">
-        View All <span>→</span>
-    </a>
-</div>
-
-<p class="gallery__row-desc">
-  Design, supply, installation and commissioning of fire-fighting and life-safety systems for stadiums, hospitals, hotels and major developments across Saudi Arabia.
-</p>
-      <div class="gallery__grid" style="margin-bottom:var(--space-lg)">
-        <a href="fire-projects.html" class="gallery__item reveal-on-scroll"><img src="Images/Fire/1.png" alt="Fire protection works" loading="lazy" /><div class="gallery__item-caption">Fire Protection Works</div></a>
-        <a href="fire-projects.html" class="gallery__item reveal-on-scroll"><img src="Images/Fire/2.png" alt="Fire protection works" loading="lazy" /><div class="gallery__item-caption">Fire Protection Works</div></a>
-        <a href="fire-projects.html" class="gallery__item reveal-on-scroll"><img src="Images/Fire/4.png" alt="Fire protection works" loading="lazy" /><div class="gallery__item-caption">Fire Protection Works</div></a>
-        <a href="fire-projects.html" class="gallery__item reveal-on-scroll"><img src="Images/Fire/3.png" alt="Fire protection works" loading="lazy" /><div class="gallery__item-caption">Fire Protection Works</div></a>
-        <a href="fire-projects.html" class="gallery__item reveal-on-scroll"><img src="Images/Fire/5.png" alt="Fire protection works" loading="lazy" /><div class="gallery__item-caption">Fire Protection Works</div></a>
       </div>
+    </section>
 
-            <div class="gallery__row-header">
+    <!-- ============ FIT-OUT & FINISHING GALLERY ============ -->
+    <!-- ============ WORK CATEGORIES GALLERY ============ -->
+    <section class="gallery">
+      <div class="container">
 
-         <p class="gallery__row-title">Industrial Works</p>
-    <a href="fitout-projects.html" class="gallery__row-more">
-        View All <span>→</span>
-    </a>
-</div>
-<p class="gallery__row-desc">
-  Heavy-duty epoxy flooring, waterproofing and insulation solutions for factories, laboratories, malls and industrial facilities.
-</p>
-      <div class="gallery__grid" style="margin-bottom:var(--space-lg)">
-        <a href="industrial-projects.html" class="gallery__item reveal-on-scroll"><img src="Images/Industrial/1.jpeg" alt="Industrial works" loading="lazy" /><div class="gallery__item-caption">Industrial Works</div></a>
-        <a href="industrial-projects.html" class="gallery__item reveal-on-scroll"><img src="Images/Industrial/2.jpeg" alt="Industrial works" loading="lazy" /><div class="gallery__item-caption">Industrial Works</div></a>
-        <a href="industrial-projects.html" class="gallery__item reveal-on-scroll"><img src="Images/Industrial/3.jpeg" alt="Industrial works" loading="lazy" /><div class="gallery__item-caption">Industrial Works</div></a>
-        <a href="industrial-projects.html" class="gallery__item reveal-on-scroll"><img src="Images/Industrial/4.jpeg" alt="Industrial works" loading="lazy" /><div class="gallery__item-caption">Industrial Works</div></a>
-        <a href="industrial-projects.html" class="gallery__item reveal-on-scroll"><img src="Images/Industrial/5.jpeg" alt="Industrial works" loading="lazy" /><div class="gallery__item-caption">Industrial Works</div></a>
+        <div class="pillars__header">
+          <p class="section-label reveal-on-scroll">Our Work</p>
+          <h2 class="section-title reveal-on-scroll">Explore by category</h2>
+        </div>
+
+   <div class="gallery__row-header">
+          <p class="gallery__row-title">Finishing Works</p>
+          <a href="Projects-Screens\fitout-projects.html" class="gallery__row-more">
+            View All <span>→</span>
+          </a>
+        </div>
+
+        <p class="gallery__row-desc">
+          Premium architectural fit-out, interior finishing and contracting works for villas, compounds and private
+          residences.
+        </p>
+        <div class="gallery__grid" style="margin-bottom:var(--space-lg)">
+          <a href="fitout-projects.html" class="gallery__item reveal-on-scroll"><img src="Images/Fitout/1.jpeg"
+              alt="Finishing works" loading="lazy" />
+            <div class="gallery__item-caption">Finishing Works</div>
+          </a>
+          <a href="fitout-projects.html" class="gallery__item reveal-on-scroll"><img src="Images/Fitout/2.jpeg"
+              alt="Finishing works" loading="lazy" />
+            <div class="gallery__item-caption">Finishing Works</div>
+          </a>
+          <a href="fitout-projects.html" class="gallery__item reveal-on-scroll"><img src="Images/Fitout/3.jpeg"
+              alt="Finishing works" loading="lazy" />
+            <div class="gallery__item-caption">Finishing Works</div>
+          </a>
+          <a href="fitout-projects.html" class="gallery__item reveal-on-scroll"><img src="Images/Fitout/4.jpeg"
+              alt="Finishing works" loading="lazy" />
+            <div class="gallery__item-caption">Finishing Works</div>
+          </a>
+          <a href="fitout-projects.html" class="gallery__item reveal-on-scroll"><img src="Images/Fitout/5.jpeg"
+              alt="Finishing works" loading="lazy" />
+            <div class="gallery__item-caption">Finishing Works</div>
+          </a>
+        </div>
+
+        <div class="gallery__row-header">
+          <p class="gallery__row-title">Fire Protection Works</p>
+          <a href="fire-projects.html" class="gallery__row-more">
+            View All <span>→</span>
+          </a>
+        </div>
+
+        <p class="gallery__row-desc">
+          Design, supply, installation and commissioning of fire-fighting and life-safety systems for stadiums,
+          hospitals, hotels and major developments across Saudi Arabia.
+        </p>
+        <div class="gallery__grid" style="margin-bottom:var(--space-lg)">
+          <a href="fire-projects.html" class="gallery__item reveal-on-scroll"><img src="Images/Fire/1.png"
+              alt="Fire protection works" loading="lazy" />
+            <div class="gallery__item-caption">Fire Protection Works</div>
+          </a>
+          <a href="fire-projects.html" class="gallery__item reveal-on-scroll"><img src="Images/Fire/2.png"
+              alt="Fire protection works" loading="lazy" />
+            <div class="gallery__item-caption">Fire Protection Works</div>
+          </a>
+          <a href="fire-projects.html" class="gallery__item reveal-on-scroll"><img src="Images/Fire/4.png"
+              alt="Fire protection works" loading="lazy" />
+            <div class="gallery__item-caption">Fire Protection Works</div>
+          </a>
+          <a href="fire-projects.html" class="gallery__item reveal-on-scroll"><img src="Images/Fire/3.png"
+              alt="Fire protection works" loading="lazy" />
+            <div class="gallery__item-caption">Fire Protection Works</div>
+          </a>
+          <a href="fire-projects.html" class="gallery__item reveal-on-scroll"><img src="Images/Fire/5.png"
+              alt="Fire protection works" loading="lazy" />
+            <div class="gallery__item-caption">Fire Protection Works</div>
+          </a>
+        </div>
+
+
+
+        <div class="gallery__row-header">
+
+          <p class="gallery__row-title">Industrial Works</p>
+          <a href="fitout-projects.html" class="gallery__row-more">
+            View All <span>→</span>
+          </a>
+        </div>
+        <p class="gallery__row-desc">
+          Heavy-duty epoxy flooring, waterproofing and insulation solutions for factories, laboratories, malls and
+          industrial facilities.
+        </p>
+        <div class="gallery__grid" style="margin-bottom:var(--space-lg)">
+          <a href="industrial-projects.html" class="gallery__item reveal-on-scroll"><img src="Images/Industrial/1.jpeg"
+              alt="Industrial works" loading="lazy" />
+            <div class="gallery__item-caption">Industrial Works</div>
+          </a>
+          <a href="industrial-projects.html" class="gallery__item reveal-on-scroll"><img src="Images/Industrial/2.jpeg"
+              alt="Industrial works" loading="lazy" />
+            <div class="gallery__item-caption">Industrial Works</div>
+          </a>
+          <a href="industrial-projects.html" class="gallery__item reveal-on-scroll"><img src="Images/Industrial/3.jpeg"
+              alt="Industrial works" loading="lazy" />
+            <div class="gallery__item-caption">Industrial Works</div>
+          </a>
+          <a href="industrial-projects.html" class="gallery__item reveal-on-scroll"><img src="Images/Industrial/4.jpeg"
+              alt="Industrial works" loading="lazy" />
+            <div class="gallery__item-caption">Industrial Works</div>
+          </a>
+          <a href="industrial-projects.html" class="gallery__item reveal-on-scroll"><img src="Images/Industrial/5.jpeg"
+              alt="Industrial works" loading="lazy" />
+            <div class="gallery__item-caption">Industrial Works</div>
+          </a>
+        </div>
+
+
+     
+
+
+
+        <div class="gallery__row-header">
+
+          <p class="gallery__row-title">Landscape Works</p>
+          <a href="landscape-projects.html" class="gallery__row-more">
+            View All <span>→</span>
+          </a>
+        </div>
+        <p class="gallery__row-desc">
+          Softscape and hardscape design, irrigation systems and outdoor finishing for residential compounds, resorts
+          and public spaces.
+        </p>
+        <div class="gallery__grid">
+          <a href="landscape-projects.html" class="gallery__item reveal-on-scroll"><img src="Images/Landscape/8.jpeg"
+              alt="Landscape works" loading="lazy" />
+            <div class="gallery__item-caption">Landscape Works</div>
+          </a>
+          <a href="landscape-projects.html" class="gallery__item reveal-on-scroll"><img src="Images/Landscape/21.jpeg"
+              alt="Landscape works" loading="lazy" />
+            <div class="gallery__item-caption">Landscape Works</div>
+          </a>
+          <a href="landscape-projects.html" class="gallery__item reveal-on-scroll"><img src="Images/Landscape/11.jpeg"
+              alt="Landscape works" loading="lazy" />
+            <div class="gallery__item-caption">Landscape Works</div>
+          </a>
+          <a href="landscape-projects.html" class="gallery__item reveal-on-scroll"><img src="Images/Landscape/3.jpeg"
+              alt="Landscape works" loading="lazy" />
+            <div class="gallery__item-caption">Landscape Works</div>
+          </a>
+        </div>
+
       </div>
-
-      <div class="gallery__row-header">
-    <p class="gallery__row-title">Finishing Works</p>
-    <a href="Projects-Screens\fitout-projects.html" class="gallery__row-more">
-        View All <span>→</span>
-    </a>
-</div>
-
-<p class="gallery__row-desc">
-  Premium architectural fit-out, interior finishing and contracting works for villas, compounds and private residences.
-</p>
-<div class="gallery__grid" style="margin-bottom:var(--space-lg)">
-        <a href="fitout-projects.html" class="gallery__item reveal-on-scroll"><img src="Images/Fitout/1.jpeg" alt="Finishing works" loading="lazy" /><div class="gallery__item-caption">Finishing Works</div></a>
-        <a href="fitout-projects.html" class="gallery__item reveal-on-scroll"><img src="Images/Fitout/2.jpeg" alt="Finishing works" loading="lazy" /><div class="gallery__item-caption">Finishing Works</div></a>
-        <a href="fitout-projects.html" class="gallery__item reveal-on-scroll"><img src="Images/Fitout/3.jpeg" alt="Finishing works" loading="lazy" /><div class="gallery__item-caption">Finishing Works</div></a>
-        <a href="fitout-projects.html" class="gallery__item reveal-on-scroll"><img src="Images/Fitout/4.jpeg" alt="Finishing works" loading="lazy" /><div class="gallery__item-caption">Finishing Works</div></a>
-        <a href="fitout-projects.html" class="gallery__item reveal-on-scroll"><img src="Images/Fitout/5.jpeg" alt="Finishing works" loading="lazy" /><div class="gallery__item-caption">Finishing Works</div></a>
-      </div>
+    </section>
+    <!-- ============ FIT-OUT & FINISHING — SPLIT LAYOUT ============ -->
 
 
-
-      
-            <div class="gallery__row-header">
-
-         <p class="gallery__row-title">Landscape Works</p>
-    <a href="fitout-projects.html" class="gallery__row-more">
-        View All <span>→</span>
-    </a>
-</div>
-<p class="gallery__row-desc">
-  Softscape and hardscape design, irrigation systems and outdoor finishing for residential compounds, resorts and public spaces.
-</p>
-      <div class="gallery__grid">
-        <a href="landscape-projects.html" class="gallery__item reveal-on-scroll"><img src="Images/Landscape/8.jpeg" alt="Landscape works" loading="lazy" /><div class="gallery__item-caption">Landscape Works</div></a>
-        <a href="landscape-projects.html" class="gallery__item reveal-on-scroll"><img src="Images/Landscape/21.jpeg" alt="Landscape works" loading="lazy" /><div class="gallery__item-caption">Landscape Works</div></a>
-        <a href="landscape-projects.html" class="gallery__item reveal-on-scroll"><img src="Images/Landscape/11.jpeg" alt="Landscape works" loading="lazy" /><div class="gallery__item-caption">Landscape Works</div></a>
-        <a href="landscape-projects.html" class="gallery__item reveal-on-scroll"><img src="Images/Landscape/3.jpeg" alt="Landscape works" loading="lazy" /><div class="gallery__item-caption">Landscape Works</div></a>
-      </div>
-
-    </div>
-  </section>
-<!-- ============ FIT-OUT & FINISHING — SPLIT LAYOUT ============ -->
-
-
-
-  <!-- ============ LINK TO FIRE PROTECTION PROJECTS ============ -->
-  <!-- <section class="contact-strip">
+    <!-- ============ LINK TO FIRE PROTECTION PROJECTS ============ -->
+    <!-- <section class="contact-strip">
     <div class="container">
       <div class="contact-strip__inner">
         <div class="reveal-on-scroll">
@@ -186,72 +239,79 @@
     </div>
   </section> -->
 
-  <!-- ============ CONTACT CTA ============ -->
-  <section class="contact-strip" id="contact">
-    <div class="container">
-      <div class="contact-strip__inner">
-        <div>
-          <h3>Let's build something lasting together</h3>
-          <p>Our team is happy to discuss your project, our approach, and how ROOTBUILD can deliver it end-to-end.</p>
-        </div>
-        <a href="contact.html" class="btn btn--primary">Get in Touch</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ FOOTER ============ -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__grid">
-        <div class="footer__brand">
-          <a href="index.html" class="footer__logo">
-            <img src="assets\logoName.png" alt="ROOTBUILD" class="footer__logo-img" />
-          </a>
-          <p>Great structures begin with strong roots.<br />Integrated contracting across the Kingdom of Saudi Arabia.</p>
-        </div>
-        <div class="footer__col">
-          <h4>Company</h4>
-          <ul>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h4>Specialties</h4>
-          <ul>
-            <li><a href="services.html#fire-safety">Fire-Fighting &amp; Safety</a></li>
-            <li><a href="services.html#infrastructure">Infrastructure Works</a></li>
-            <li><a href="services.html#fit-out">Fit-Out &amp; Finishing</a></li>
-            <li><a href="services.html#epoxy-flooring">Epoxy Flooring</a></li>
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h4>Contact</h4>
-          <ul>
-            <li><a href="mailto:info@rootbuild-sa.com">info@rootbuild-sa.com</a></li>
-            <li><a href="tel:+966542033019">+966 54 203 3019</a></li>
-            <li><a href="tel:+966541293406">+966 54 129 3406</a></li>
-            <li><a href="contact.html">Kingdom of Saudi Arabia</a></li>
-          </ul>
+    <!-- ============ CONTACT CTA ============ -->
+    <section class="contact-strip" id="contact">
+      <div class="container">
+        <div class="contact-strip__inner">
+          <div>
+            <h3>Let's build something lasting together</h3>
+            <p>Our team is happy to discuss your project, our approach, and how ROOTBUILD can deliver it end-to-end.</p>
+          </div>
+          <a href="contact.html" class="btn btn--primary">Get in Touch</a>
         </div>
       </div>
-      <div class="footer__bottom">
-        <p>© 2026 ROOTBUILD. All rights reserved.</p>
-        <div class="footer__bottom-links">
-          <a href="documents/ROOTBUILD_Company_Profile_2026.pdf" download>Download Profile</a>
-       
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__brand">
+            <a href="index.html" class="footer__logo">
+              <img src="assets\logoName.png" alt="ROOTBUILD" class="footer__logo-img" />
+            </a>
+            <p>Great structures begin with strong roots.<br />Integrated contracting across the Kingdom of Saudi Arabia.
+            </p>
+          </div>
+          <div class="footer__col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>Specialties</h4>
+            <ul>
+              <li><a href="services.html#fire-safety">Fire-Fighting &amp; Safety</a></li>
+              <li><a href="services.html#infrastructure">Infrastructure Works</a></li>
+              <li><a href="services.html#fit-out">Fit-Out &amp; Finishing</a></li>
+              <li><a href="services.html#epoxy-flooring">Epoxy Flooring</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>Contact</h4>
+            <ul>
+              <li><a href="mailto:info@rootbuild-sa.com">info@rootbuild-sa.com</a></li>
+              <li><a href="tel:+966542033019">+966 54 203 3019</a></li>
+              <li><a href="tel:+966541293406">+966 54 129 3406</a></li>
+              <li><a href="contact.html">Kingdom of Saudi Arabia</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p>© 2026 ROOTBUILD. All rights reserved.</p>
+          <div class="footer__bottom-links">
+            <a href="documents/ROOTBUILD_Company_Profile_2026.pdf" download>Download Profile</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <a href="https://wa.me/966542033019" class="whatsapp-fab" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-    <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-  </a>
+    <a href="https://wa.me/966542033019" class="whatsapp-fab" target="_blank" rel="noopener"
+      aria-label="Chat on WhatsApp">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor">
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+      </svg>
+    </a>
 
-</div>
-<script src="js/main.js"></script>
+  </div>
+  <script src="js/main.js"></script>
 </body>
+
 </html>
