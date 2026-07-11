@@ -12,49 +12,37 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
 </head>
 <body>
-<div id="page-loader" class="page-loader">
-  <div class="page-loader__bg"></div>
-  <div class="page-loader__content">
-    <img src="assets/logo.png" alt="ROOTBUILD" class="page-loader__logo" />
-    <div class="page-loader__ring"></div>
-  </div>
-</div>
+
   <!-- ============ NAVIGATION ============ -->
-<nav class="nav" id="nav">
+ <nav class="nav" id="nav">
   <div class="nav__inner">
 
-     <a href="index.html" class="nav__logo">
-  <img src="assets/logo.png" alt="ROOTBUILD" class="nav__logo-img" />
+    <a href="index.html" class="nav__logo">
+      <img src="assets/logo.png" alt="ROOTBUILD" class="nav__logo-img" />
+      <span class="nav__logo-word">
+        ROOT<em>BUILD</em>
+      </span>
+    </a>
 
-  <div class="nav__logo-text">
-    <span class="nav__logo-word">
-      ROOT<em>BUILD</em>
-    </span>
-
-    <span class="nav__logo-subtitle">
-      Construction &amp; Development
-    </span>
-  </div>
-</a>
-    <ul class="nav__links" id="navLinks">
-     <li><a href="index.html">Home</a></li>
-      <li class="active"><a href="about.html">About Us</a></li>
+<ul class="nav__links" id="navLinks">
+         <li><a href="index.html">Home</a></li>
+       <li class="active"><a href="about.html">About Us</a></li>
       <li><a href="services.html">Services</a></li>
-      <li class="nav__dropdown">
-        <button type="button" class="nav__dropdown-toggle">
-          Projects ▾
-        </button>
-        <ul class="dropdown-menu">
-          <li><a href="fitout-projects.html">Finishing Works</a></li>
-          <li><a href="fire-projects.html">Fire Protection Works</a></li>
-          <li><a href="industrial-projects.html">Industrial Works</a></li>
-          <li><a href="landscape-projects.html">Landscape Works</a></li>
-        </ul>
-      </li>
-      <li><a href="contact.html">Contact</a></li>
+ <li class="nav__dropdown">
+    <button type="button" class="nav__dropdown-toggle">
+        Projects ▾
+    </button>
+
+    <ul class="dropdown-menu">
+        <li><a href="fitout-projects.html">Finishing Works</a></li>
+        <li><a href="fire-projects.html">Fire Protection Works</a></li>
+        <li><a href="industrial-projects.html">Industrial Works</a></li>
+        <li><a href="landscape-projects.html">Landscape Works</a></li>
+    </ul>
+</li>      <li><a href="contact.html">Contact</a></li>
     </ul>
 
-    
+      
     <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
@@ -116,6 +104,18 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats__grid">
+        <div class="stats__item reveal-on-scroll"><span class="stats__number">8</span><span class="stats__label">Integrated service specialties</span></div>
+        <div class="stats__item reveal-on-scroll"><span class="stats__number">12+</span><span class="stats__label">Major fire-protection projects delivered</span></div>
+        <div class="stats__item reveal-on-scroll"><span class="stats__number">6</span><span class="stats__label">Regions served across Saudi Arabia</span></div>
+        <div class="stats__item reveal-on-scroll"><span class="stats__number">100%</span><span class="stats__label">Compliance with SBC & Civil Defence</span></div>
       </div>
     </div>
   </section>
@@ -218,7 +218,7 @@
     </div>
     <div class="spotlight__image">
       <div class="spotlight__photo">
-        <img src="https://images.unsplash.com/photo-1535732759880-bbd5c7265e3f?auto=format&fit=crop&w=1200&q=80" alt="Tower crane on a ROOTBUILD development site" loading="lazy" />
+        <img src="assets/saudi_modern_skyscraper.webp" alt="Tower crane on a ROOTBUILD development site" loading="lazy" />
       </div>
     </div>
   </section>
@@ -277,7 +277,8 @@
         <p>© 2026 ROOTBUILD. All rights reserved.</p>
         <div class="footer__bottom-links">
           <a href="documents/ROOTBUILD_Company_Profile_2026.pdf" download>Download Profile</a>
-  
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
         </div>
       </div>
     </div>

@@ -249,7 +249,7 @@ function generateGallery(containerId, folder, start, end,extinstion) {
 
 generateGallery('FitoutPhotoGrid', 'Fitout', 1,56,'jpeg');
 generateGallery('FirePhotoGrid', 'Fire', 1,6,'png');
-generateGallery('IndustrialPhotoGrid', 'Industrial', 1,14,'jpeg');
+generateGallery('IndustrialPhotoGrid', 'Industrial', 1,13,'jpeg');
 generateGallery('LandscapePhotoGrid', 'Landscape', 1,22,'jpeg');
 
 
