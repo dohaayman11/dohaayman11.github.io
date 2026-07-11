@@ -131,7 +131,7 @@ ul{list-style:none}
 /* SVG fallback logo-word (used in footer + pages without image) */
 .nav__logo-mark{flex-shrink:0}
 .nav__logo-mark path{fill:none;stroke:currentColor;stroke-width:2.2}
-.nav__logo-word{font-family:var(--font-display);font-size:1.8rem;font-weight:700;color:var(--navy);letter-spacing:.01em;line-height:1}
+.nav__logo-word{font-family: 'Pliant';font-size:1.8rem;font-weight:700;color:var(--navy);letter-spacing:.01em;line-height:1}
 .nav__logo-word em{font-style:normal;color:var(--brown)}
 .nav.scrolled .nav__logo-word{font-size:1.1rem}
 .nav__links{
